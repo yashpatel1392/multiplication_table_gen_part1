@@ -1,0 +1,128 @@
+/* 
+ * Name: Yash Patel
+ * Email: Yash_Patel5@student.uml.edu
+ * File: style.css
+*/
+
+body{
+    min-width: 600px;
+    max-width: 1600px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+    background-color:rgb(231, 233, 237);
+    font-family: system-ui;
+}
+
+h1{
+    margin-top: 20px;
+    background-color: rgb(7, 57, 114);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgb(219, 238, 254);
+    border-radius: 90px;
+}
+
+/* Form Styling */
+#num_form{
+    border-radius: 80px; 
+    text-align: center;
+}
+
+label {
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(3, 60, 105);
+}
+input{
+    background-color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 10px;
+    justify-content: right;
+}
+#submit {
+    background-color: rgb(9, 81, 136);
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: rgb(219, 238, 254);
+}
+
+/* Table Styling */
+/* Made few minor changes to my css styling for the table from HW3 to have the first row */
+/* and first column to be fixed when scrolling, also added max_height for the table */
+#multiplication_table {
+    max-height: 500px;
+    overflow: auto;
+} 
+
+table{
+    border-collapse: collapse;
+    max-width: 1000px;
+    text-align: center;
+    margin: 20px auto; 
+}
+
+td, th{
+    border: 1px solid rgb(16, 16, 44);
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+th:first-child {
+    background-color:rgb(231, 233, 237);
+    border: 0px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(207, 233, 255);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(162, 213, 251);
+}
+
+/* Styling for fixing the first row and first column when scrolling */
+th {
+    position: sticky;
+    top: 0;
+    background-color: rgb(24, 96, 178);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: rgb(24, 96, 178);
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+th:first-child {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    background-color: rgb(24, 96, 178);
+}
+
+#message{
+    color: rgb(3, 60, 105);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* Error message styling */
+#numbers label.error{
+    color: red;
+    font-style: italic;
+    font-size: 13px;
+}

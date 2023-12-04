@@ -1,0 +1,36 @@
+<!-- 
+    Name: Yash Patel
+    Email: Yash_Patel5@student.uml.edu
+    File: index.html
+ -->
+ 
+<html>
+<head>
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Multiplication Table Generator</h1>
+    <div id="num_form">
+        <div id="message">Please enter values between -50 and 50 for all fields.</div>
+        <form id="numbers"><br>
+            <label for="min_x">Minimum Column Value</label>
+            <input type="text" id="min_x" name="min_x"><br><br>
+            <label for="max_x">Maximum Column Value</label>
+            <input type="text" id="max_x" name="max_x"><br><br>
+            <label for="min_y">Minimum Row Value</label>
+            <input type="text" id="min_y" name="min_y"><br><br>
+            <label for="max_y">Maximum Row Value</label>
+            <input type="text" id="max_y" name="max_y"><br><br>
+            <input type="submit" id="submit" value="Generate">
+        </form>
+    </div>
+
+    <div id="multiplication_table"></div>
+
+    <script src="js/generate_table.js"></script>
+
+</body>
+</html>
